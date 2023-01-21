@@ -1,0 +1,42 @@
+table, th, td {
+    border: 1px solid;
+}
+table {
+    border-collapse: collapse;
+    width: 40%;
+    
+}
+
+td {
+    height: 50px;
+    vertical-align: center;
+}
+
+.date-button{
+    width: 100%;
+    height: 100%;
+}
+.hour-button{
+    width: 100%;
+    height: 100%;
+}
+.red-button{
+    background-color: red;
+    pointer-events: none;
+}
+.blue-button{
+    background-color: blue;
+    
+}
+.green-button{
+    background-color: green;
+    pointer-events: none;
+}
+.disabled-button{
+    background-color: lightcoral;
+    pointer-events: none;
+}
+
+
+
+

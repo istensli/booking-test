@@ -38,7 +38,7 @@ function getMonthAsTable(){
 
  }
 
- return `<table> ${_table}</table>` + ` <br /> dato valgt: ${dateSelected? dateSelected+1 : ''} <br /> ${showTimePicker()}`; 
+ return `<table> ${_table}</table>` + ` <br /> dato valgt: ${(dateSelected || dateSelected === 0)? dateSelected+1 : ''} <br /> ${showTimePicker()}`; 
 
 }
 
@@ -95,7 +95,7 @@ function showTimePicker(){
 
 
     //hva gjør denne koden igjen??Åja...den viser datePickeren..
-    if(dateSelected){
+    if(dateSelected || dateSelected === 0){
         return html;
     }
     else return '';
